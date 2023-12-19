@@ -1,0 +1,28 @@
+package com.javatechie.os.api.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.javatechie.os.api.common.Payment;
+import com.javatechie.os.api.common.TransactionRequest;
+import com.javatechie.os.api.entity.Order;
+import com.javatechie.os.api.repository.OrderRepository;
+
+@Service
+public class OrderService {
+
+	@Autowired
+	private OrderRepository orderRepository;
+	
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	public Order saveOrder(TransactionRequest request) {
+		Order order = request.getOrder();
+		Payment payment = request.getPayment();
+		payment.setOrderId(order.getId());
+		payment.setAmount(order.getPrice());
+		return orderRepository.save(order);
+	}
+}

@@ -1,0 +1,44 @@
+package net.javaguides.springboot;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
+import net.javaguides.springboot.entity.Employee;
+import net.javaguides.springboot.controller.EmployeeController;
+import net.javaguides.springboot.repository.EmployeeRepository;
+
+@SpringBootTest
+class SpringbootBackendApplicationTests {
+
+	@Mock
+	private EmployeeRepository employeeRepository;
+	
+	@InjectMocks
+	private EmployeeController employeeController;
+	
+	
+	@Test
+	public void testGetAllEmployees() {
+		MockitoAnnotations.initMocks(this);
+		
+		Employee e1=new Employee(1L,"sachin","ghatage","sachin@123");
+		Employee e2=new Employee(2L,null,null,null);
+		List<Employee> mockEmployees = Arrays.asList(e1,e2);
+		
+		when(employeeRepository.findAll()).thenReturn(mockEmployees);
+		
+		List<Employee> result = employeeController.getAllEmployees();
+		
+		assertEquals(mockEmployees, result);
+	}
+
+}

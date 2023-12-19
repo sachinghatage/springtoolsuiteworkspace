@@ -1,0 +1,5 @@
+package com.custom.generator.entity;
+
+public class OrderDetails {
+
+}

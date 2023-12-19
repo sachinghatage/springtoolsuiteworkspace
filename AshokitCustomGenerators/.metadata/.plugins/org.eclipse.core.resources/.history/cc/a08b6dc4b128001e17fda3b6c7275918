@@ -1,0 +1,21 @@
+package com.custom.generator.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name="order_details")
+@Data
+public class OrderDetails {
+
+	@Id
+	private String orderId;    //OD1  OD2
+	private String orderBy;
+	private Date orderPlacedDate;
+	
+}

@@ -1,0 +1,5 @@
+package com.custom.generator.generators;
+
+public class OrderIdGenerator {
+
+}

@@ -1,0 +1,40 @@
+package com.pdf.pdfExporter;
+
+import java.awt.Color;
+import java.util.List;
+
+import com.lowagie.text.*;
+import com.pdf.entity.User;
+
+public class UserPdfExporter {
+	private List<User> listUsers;
+    
+    public UserPDFExporter(List<User> listUsers) {
+        this.listUsers = listUsers;
+    }
+ 
+    private void writeTableHeader(PdfPTable table) {
+        PdfPCell cell = new PdfPCell();
+        cell.setBackgroundColor(Color.BLUE);
+        cell.setPadding(5);
+         
+        Font font = FontFactory.getFont(FontFactory.HELVETICA);
+        font.setColor(Color.WHITE);
+         
+        cell.setPhrase(new Phrase("User ID", font));
+         
+        table.addCell(cell);
+         
+        cell.setPhrase(new Phrase("E-mail", font));
+        table.addCell(cell);
+         
+        cell.setPhrase(new Phrase("Full Name", font));
+        table.addCell(cell);
+         
+        cell.setPhrase(new Phrase("Roles", font));
+        table.addCell(cell);
+         
+        cell.setPhrase(new Phrase("Enabled", font));
+        table.addCell(cell);       
+    }
+}

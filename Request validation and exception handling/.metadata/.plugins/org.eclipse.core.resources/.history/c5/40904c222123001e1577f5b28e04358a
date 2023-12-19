@@ -1,0 +1,5 @@
+package com.javatechie.api.service;
+
+public class UserService {
+
+}

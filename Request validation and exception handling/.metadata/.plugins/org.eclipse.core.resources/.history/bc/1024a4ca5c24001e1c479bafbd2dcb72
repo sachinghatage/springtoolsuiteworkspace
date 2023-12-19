@@ -1,0 +1,19 @@
+package com.javatechie.api.advice;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class ApplicationExceptionHandler {
+
+	public Map<String,String> handle(MethodArgumentNotValidException e){
+		Map<String,String> map=new HashMap<>();
+		e.getBindingResult().getFieldError().forEach(error->{
+			map.put(error.getField(),error.getDefaultMessage());
+		});
+		return map;
+	}
+}

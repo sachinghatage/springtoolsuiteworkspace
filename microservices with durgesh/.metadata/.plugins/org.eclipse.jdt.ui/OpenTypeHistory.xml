@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=UserService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.user.service.userservice{UserService.java[UserService" modifiers="513" timestamp="1689669784871"/>
+    <typeInfo handle="=HotelService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hotel.service.service{HotelService.java[HotelService" modifiers="513" timestamp="1689690525194"/>
+    <typeInfo handle="=UserService/C:\/Users\/CSO\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.7.13\/spring-data-jpa-2.7.13.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.7.13=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1689047899673"/>
+    <typeInfo handle="=RatingService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rating.service.service{RatingService.java[RatingService" modifiers="513" timestamp="1689693074149"/>
+    <typeInfo handle="=ApiGateway/C:\/Users\/CSO\/Downloads\/sts-4.18.1.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.util(Collections.class[Collections" modifiers="33" timestamp="1685095645836"/>
+    <typeInfo handle="=ApiGateway/C:\/Users\/CSO\/Downloads\/sts-4.18.1.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1685095645836"/>
+</typeInfoHistroy>

@@ -1,0 +1,5 @@
+package com.csv.beans;
+
+public interface IDataFilter {
+
+}

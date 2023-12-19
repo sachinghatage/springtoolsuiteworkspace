@@ -1,0 +1,18 @@
+package com.pdf.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name="users")
+public class User {
+	private Integer id;
+	private String fullName;
+	private String email;
+	private String password;
+	private boolean enabled;
+
+}

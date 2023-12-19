@@ -1,0 +1,5 @@
+package com.javatechie.os.api.common;
+
+public class TransactionResponse {
+
+}

@@ -1,0 +1,11 @@
+server:
+  port: 9192
+spring:
+  application:
+    name: ORDER-SERVICE
+  
+  h2:
+    console:
+      enabled: true
+logging:
+    name: C:\Users\CSO\Desktop\microservices-logs  

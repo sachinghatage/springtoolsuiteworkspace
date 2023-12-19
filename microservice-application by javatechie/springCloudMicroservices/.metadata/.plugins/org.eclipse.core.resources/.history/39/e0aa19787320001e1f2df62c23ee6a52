@@ -1,0 +1,46 @@
+package com.javatechie.os.api.common;
+
+
+
+public class TransactionResponse {
+	
+	
+	private int order;
+	private double amount;
+	private String transactionId;
+	private String message;
+	public TransactionResponse(int order, double amount, String transactionId, String message) {
+		super();
+		this.order = order;
+		this.amount = amount;
+		this.transactionId = transactionId;
+		this.message = message;
+	}
+	public int getOrderId() {
+		return order;
+	}
+	public void setOrderId(int orderId) {
+		this.order = orderId;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	public String getTransactionId() {
+		return transactionId;
+	}
+	public void setTransactionId(String transactionId) {
+		this.transactionId = transactionId;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+
+
+}

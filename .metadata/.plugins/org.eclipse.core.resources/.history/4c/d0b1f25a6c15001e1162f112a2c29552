@@ -1,0 +1,5 @@
+package com.csvreader.model;
+
+public class Product {
+
+}

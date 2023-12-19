@@ -1,0 +1,5 @@
+package com.csvreader.beans;
+
+public interface IDataFilter {
+
+}

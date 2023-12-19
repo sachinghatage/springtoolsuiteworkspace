@@ -1,0 +1,5 @@
+package com.javatechie.cloud.gateway;
+
+public class FallbackController {
+
+}
